@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:basics_sun_c11/screens/calculator/calculator.dart';
 import 'package:basics_sun_c11/screens/game_board/game_board.dart';
 import 'package:basics_sun_c11/screens/game_board/splash.dart';
@@ -15,6 +13,7 @@ void main() {
   runApp(MyApp());
 }
 
+/// Test comment for commit
 class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
