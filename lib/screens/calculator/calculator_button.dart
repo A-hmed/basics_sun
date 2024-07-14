@@ -14,15 +14,11 @@ class CalculatorButton extends StatelessWidget {
             margin: EdgeInsets.all(8),
             child: ElevatedButton(
                 onPressed: () {
-                  if (digit == "=") {
-                    onClick();
-                  } else {
-                    onClick(digit);
-                  }
+                  onClick(digit);
                 },
                 child: Text(
                   digit,
-                  style: TextStyle(fontSize: 22, color: Colors.red),
+                  style: TextStyle(fontSize: 24, color: Colors.red),
                 ))));
   }
 }
