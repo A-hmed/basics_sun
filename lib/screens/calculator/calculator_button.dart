@@ -11,14 +11,18 @@ class CalculatorButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
         child: Container(
-            margin: EdgeInsets.all(8),
+            margin: EdgeInsets.all(4),
             child: ElevatedButton(
                 onPressed: () {
-                  onClick(digit);
+                  if (digit == "=") {
+                    onClick();
+                  } else {
+                    onClick(digit);
+                  }
                 },
                 child: Text(
                   digit,
-                  style: TextStyle(fontSize: 24, color: Colors.red),
+                  style: TextStyle(fontSize: 24),
                 ))));
   }
 }
