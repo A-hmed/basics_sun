@@ -22,7 +22,7 @@ class CalculatorButton extends StatelessWidget {
                 },
                 child: Text(
                   digit,
-                  style: TextStyle(fontSize: 28, color: Colors.red),
+                  style: TextStyle(fontSize: 22, color: Colors.red),
                 ))));
   }
 }
